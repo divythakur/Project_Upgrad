@@ -2,27 +2,37 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/home/divyanshu/upgrad/scribbler/styles/postlist.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
+    <header>
+        <div class="header-items">
+            <p id="scribbler">Scribbler</p>
+            <button id="sign-up"><span class="text-button" onclick="signupfunction()">Sign Up</span></button>
+            <button id="sign-in"><span class="text-button" onclick="signinfunc()">Sign In</span></button>
+            <p id="sub-heading">Explore, Imagine, Create</p>
+        </div>
+    </header>
     <!-- TODO: Include code for header here -->
 
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
     <!-- list of all posts starts here -->
-    <div>
+    <div id="postcontainer">
 
         <!-- post 1 starts here -->
-        <div>
-            <div>
+        <div class="postlist">
+            <div class="nameinpost">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div>
+            <div class="postcontent">
                 <div>
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                    <p class="heading">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!<span><i class="material-icons">delete</i></span></p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                     </span>
@@ -36,14 +46,14 @@
         <!-- post 1 ends here -->
 
         <!-- post 2 starts here -->
-        <div>
-            <div>
+        <div class="postlist">
+            <div class="nameinpost">
                 <p>Colby Fayock</p>
             </div>
 
-            <div>
+            <div class="postcontent">
                 <div>
-                    <p>What is linting and how can it save you time?</p>
+                    <p class="heading">What is linting and how can it save you time?<span><i class="material-icons">delete</i></span></p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                     </span>
@@ -57,14 +67,14 @@
         <!-- post 2 ends here -->
 
         <!-- post 3 starts here -->
-        <div>
-            <div>
+        <div class="postlist">
+            <div class="nameinpost">
                 <p>Yazeed Bzadough</p>
             </div>
 
-            <div>
+            <div class="postcontent">
                 <div>
-                    <p>How to Get More Views on Your Tech Blog</p>
+                    <p class="heading">How to Get More Views on Your Tech Blog<span><i class="material-icons">delete</i></span></p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                     </span>
@@ -78,17 +88,15 @@
         <!-- post 3 ends here -->
 
         <!-- post 4 starts here -->
-        <div>
-            <div>
+        <div class="postlist">
+            <div class="nameinpost">
                 <p>Cedd Burge</p>
             </div>
 
-            <div>
+            <div class="postcontent">
                 <div>
-                    <p>How to write easily describable code</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    </span>
+                    <p class="heading">How to write easily describable code<span><i class="material-icons" onclick="areyousure()">delete</i></span></p>
+                    
                 </div>
                 <p>When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
                     leads to confusion when discussing the code.</p>
@@ -100,14 +108,14 @@
         <!-- post 4 ends here -->
 
         <!-- post 5 starts here -->
-        <div>
-            <div>
+        <div class="postlist" id="postlist5">
+            <div class="nameinpost">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div>
+            <div class="postcontent">
                 <div>
-                    <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                    <p class="heading">Everything you should know about ‘module’ & ‘require’ in Node.js<span><i class="material-icons">delete</i></span></p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                     </span>
@@ -124,7 +132,17 @@
         <!-- TODO: Write code for delete post modal here -->
 
     </div>
-    <!-- list of all posts ends here -->
+
+    <section id="trashmodalcontainer">
+        <section id="trashmodal">
+            <p style="margin:20px;padding:15px;margin-bottom: 5px;font-family:'Times New Roman', Times, serif;font-weight: lighter;font-size: 18px;">Are you sure you want to delete this post?</p>
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+        </section>
+
+    </section>
+
+    <script type="text/javascript" src="/home/divyanshu/upgrad/scribbler/scripts/postlist.js"></script>
 </body>
 
 </html>

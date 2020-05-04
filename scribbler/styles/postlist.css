@@ -1,0 +1,119 @@
+body{
+    background-color: #ffeedd;
+}
+#scribbler{
+    font-family: 'Montez', cursive; 
+    margin:  0px 0px 0px 0px;
+    font-size:35px;
+    padding: 0px 0px 0px 0px;
+    color:blue;
+}
+#sub-heading{
+    font-family: 'Ubuntu Mono', monospace;;
+    margin:  0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#sign-up{
+    margin-left: 890px;
+    padding:0px 0px 0px 0px;
+    width:105px;
+    color:white;
+    background-color: blue;
+    margin-top:10px;
+    height:30px;
+}
+#sign-in{
+    margin-right: 0px;
+    margin-left:20px;
+    padding:0px 0px 0px 0px;
+    width:105px;
+    color:white;
+    margin-top:10px;
+    background-color: blue;
+    height:30px;
+}
+.header-items{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.postlist{
+    width:40%;
+    background-color: white;
+    margin:50px;
+    display:flex;
+    flex-direction: row;
+    border-radius: 20px;
+    
+   
+}
+#postlist5{
+    width:49%;
+    background-color: white;
+    align-self: center;
+    margin:50px;
+    margin-left: 28%;
+}
+#postcontainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display:none;
+}
+.nameinpost{
+
+    width:59px;
+    
+    margin:0;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 35px;
+}
+.postcontent{
+    background-color:lightgray;
+    padding: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.heading{
+    color:gray;
+    font-weight: bold;
+    font-size: 16px;
+}
+.material-icons{
+    float: right;
+    font-weight: bolder;
+}
+.material-icons:hover{
+    cursor:pointer;
+
+}
+#trashmodal{
+    width:400px;
+    background-color: white;
+    margin-top: 12%; 
+    font-weight: bolder;
+    margin-left: 36%; 
+    display:block;
+}
+#trashmodalcontainer{
+    width: 100%; 
+  height: 100%; 
+}
+#yes{
+    background-color: green;
+    color:white;
+    width:60px;
+    margin-left:32px;
+    border:none;
+
+}
+#no{
+
+    color:white;
+    background-color: red;
+    width:60px;
+    margin:15px;
+    border:none;
+    margin-left: 180px;
+}
