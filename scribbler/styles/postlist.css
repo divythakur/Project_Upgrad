@@ -38,22 +38,19 @@ body{
     flex-wrap: wrap;
 }
 .postlist{
-    width:40%;
+    width:42%;
     background-color: white;
-    margin:50px;
+    margin:4%;
     display:flex;
     flex-direction: row;
     border-radius: 20px;
     
    
 }
-#postlist5{
-    width:49%;
-    background-color: white;
-    align-self: center;
-    margin:50px;
-    margin-left: 28%;
+.postlist:hover{
+    box-shadow: 5px 10px #888888;
 }
+
 #postcontainer{
     display:flex;
     flex-direction: row;
@@ -107,6 +104,7 @@ body{
   top:0;
   display:none;
   
+  
 }
 #yes{
     background-color: green;
@@ -125,3 +123,28 @@ body{
     border:none;
     margin-left: 180px;
 }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  /*  height: 1000px;
+    width: 100%;
+    /*z-index: 10;*/
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+  }
+  .fa-ellipsis-h{
+    margin-top: -9px;
+    float: right;
+    font-size: 15px;
+    color:grey;
+    margin-right: 5px;
+  }
+  .fa-ellipsis-h:hover{
+      cursor:pointer;
+  }
+  @media (max-width:300px){
+      #postcontainer{
+          width:80%;
+
+      }
+  }
