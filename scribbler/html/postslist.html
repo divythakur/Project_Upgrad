@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="/home/divyanshu/upgrad/scribbler/styles/index.css"/>
 
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -122,19 +123,20 @@
         <!-- post 5 starts here -->
         <div class="postlist" id="5">
             <div class="nameinpost">
-                <p>Srishti Gupta</p>
+                <p id="name5">Srishti Gupta</p>
             </div>
 
             <div class="postcontent">
                 <div>
-                    <p class="heading">Everything you should know about ‘module’ & ‘require’ in Node.js<span><i class="material-icons" onclick="areyousure(5)">delete</i></span></p>
+                    <p class="heading" id="h5">Everything you should know about ‘module’ & ‘require’ in Node.jsure(5)"</p>
                     <span>
+                        <i class="material-icons" onclick="areyousure(5)">delete</i>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                     </span>
                 </div>
                 <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node.</p>
                 <span>
-                    <i class="fa fa-ellipsis-h"  ></i>
+                    <i class="fa fa-ellipsis-h" onclick="changepagefromBtoC(h5,name5)" ></i>
 
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
                 </span>
@@ -145,6 +147,7 @@
         <!-- TODO: Write code for delete post modal here -->
 
     </div>
+
     <div class="overlay"></div>
     <section id="trashmodalcontainer">
         <section id="trashmodal">
@@ -193,6 +196,7 @@
 
     <script type="text/javascript" src="/home/divyanshu/upgrad/scribbler/scripts/postlist.js"></script>
     <script type="text/javascript" src="/home/divyanshu/upgrad/scribbler/scripts/index.js"></script>
+
 
     </div>
 </body>

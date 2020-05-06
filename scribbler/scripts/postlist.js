@@ -6,14 +6,11 @@ function ini()
     if(count%2!=0)
     {
         document.getElementById(element).style.margin="4% 4% 4% 28%";
-        console.log("the last elememnt that is in center is "+element);
-
+        
     }
     if(count%2===0)
     {
-        
         document.getElementById(element).style.margin="4% 4% 4% 4%";
-        console.log("the last elememnt that i not in center is "+element);
     }
 }
 ini();
@@ -54,3 +51,16 @@ function onclickyes(){
     console.log(arr);
     ini();
 }
+var postheading;
+var nameofauthor;
+function changepagefromBtoC(element,authorname)
+{
+    
+     postheading=document.getElementById(element.id).innerHTML;
+     nameofauthor=document.getElementById(authorname.id).innerHTML;
+     localStorage.setItem("aname",nameofauthor);
+     localStorage.setItem("glvar",postheading);
+     window.open("file:///home/divyanshu/upgrad/scribbler/html/post.html");
+
+}
+console.log(postheading);
