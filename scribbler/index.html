@@ -18,14 +18,16 @@
             </div>
         </header>
         <div id="buttonsincenter">
-            <button id="alposts" > All posts</button>
-            <button id="createposts" onclick="createpostfunc()"> Create Posts</button>
+            <button id="alposts" onclick="pagechange()" > All posts</button>
+            <button id="createpostsbutton" onclick="createpostfunc()"> Create Posts</button>
         </div>
+        <div class="overlay"></div>
+
     
     <section id="modalcontainer">
         <section id="modeloutside" >
             <div id="modelinside">
-                <p style="color:grey;font-size:25px;padding-bottom:10px;margin:10px;padding:5px;font-weight: lighter;">Get Started<span id="cross" onclick="crossfunc()">&times</span></p>
+                <p style="color:grey;font-size:25px;padding-bottom:10px;margin:10px;padding:5px;font-weight: lighter;">Get Started<span id="cross" onclick="crossfunc(modalcontainer)">&times</span></p>
                 <hr style="margin: 0px;"/>
                 <form id="formid">
                     <label class="modallabel">Name</label>
@@ -44,8 +46,10 @@
     <section id="modal2container">
         <section id="model2outside" >
             <div id="model2inside">
-                <p style="color:grey;font-size:25px;padding-bottom:10px;margin:10px;padding:5px;font-weight: lighter;">Welcome Back!<span id="cross" onclick="cross2func()">&times</span></p>
-                <hr style="margin: 0px;"/>
+                <p style="color:grey;font-size:25px;padding-bottom:10px;margin:10px;padding:5px;font-weight: lighter;">Welcome Back!<span id="cross2" onclick="crossfunc(modal2container)">&times</span></p>
+                <hr style="margin-right: 32px;
+                margin-left: 18px;
+                margin-top: 17px;"/>
                 <form id="formid2">
                     <label class="modallabel">Username</label>
                     <input class="modalinput" type="text" placeholder="Enter your username" value="" required></input>
@@ -58,7 +62,7 @@
         </section>
     </section>
         <section id="createpost">
-            <p id="createpostpara">Pen Your Post<span id="cross2" onclick="cross3()" >&times</span></p><hr style="margin-right:48px;margin-left: 32px;"/>
+            <p id="createpostpara">Pen Your Post<span id="cross2" onclick="crossfunc(createpost)" >&times</span></p><hr style="margin-right:48px;margin-left: 32px;"/>
             <form id="formid3">
             <label class="createpostlabel">Title</label>
             <input type="text" class="createpostinput" placeholder="Enter title of your post" required></input>

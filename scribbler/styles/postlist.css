@@ -87,7 +87,7 @@ body{
 
 }
 #trashmodal{
-    width:absolute400px;
+    width:400px;
     background-color: white;
     margin-top: 25%; 
     font-weight: bolder;
@@ -148,3 +148,4 @@ body{
 
       }
   }
+ 
