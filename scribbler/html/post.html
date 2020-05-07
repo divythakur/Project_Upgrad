@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="/home/divyanshu/upgrad/scribbler/styles/postlist.css"/>
         <link rel="stylesheet" type="text/css" href="/home/divyanshu/upgrad/scribbler/styles/post.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
     </head>
@@ -21,12 +22,24 @@
         </header>
         <section id="postpara">
             <section id="postdetails">
-                <h3 id="headingofpost" style="border:solid;"></h3>
+                <h3 id="headingofpost"></h3>
                 <div id="firstline" >
                     <p id="authorname"></p><span><button id="editbutton" onclick="wecanedit()">Edit <i class="fa fa-edit"></i></button><button id="savebutton" onclick="saveit()">Save <i class="fa fa-save"></i></button></span>
                 </div>
-                <textarea id="para" rows="25" cols="147" ></textarea>
+                <textarea id="para" rows="16" cols="147" >Node.js treats each JavaScript file as a separate module.
+                    For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module named xyz.Let’s take an example to understand this better. You have a file named circle.js which consists of the logic for calculating the area & the circumference of a circle of a given radius, as given below:
+                    circle.js You can call circle.js file a module named circle You might be wondering why is there a need to have multiple modules? You could have just written all the code in a single module. Well, it is very important to write modular code. By modular, I mean to say that your code should be independent and should be loosely coupled. Imagine that there’s a large application and you have all your code written in just one place, just one file. Too messy, right? The function wrapper for the circle module will look like the one given below:
+                    You can see that there is a function wrapper at the root level encompassing all the code written inside the circle module. The entire code written inside a module is private to the module, unless explicitly stated (exported) otherwise.This is the most significant advantage of having modules in Node.js. Even if you define a global variable in a module using var, let or const keywords, the variables are scoped locally to the module rather than being scoped globally. This happens because each module has a function wrapper of its own and the code written inside one function is local to that function and cannot be accessed outside this function.</textarea>
             </section>
+            <button id="likebutton" onclick="likeincrement()">  <i class="glyphicon glyphicon-thumbs-up" ></i> <span id="likeorliked" >Like</span></button>
+            <div class="likes">Be the first one to like this!</div>
+            <div class="commentbox">
+                <textarea id="commenthere" rows="4" cols="90" placeholder="Leave a comment . . . "></textarea>
+                <div><button id="commentbutton" style="padding:6px;" onclick="addcomment(commenthere)">Comment</button></div>
+                <div style="font-weight: bold;margin:11px;margin-left: 0px;">All Comments</div>
+                <div id="entercomments"></div>
+            </div>
+
         </section>
         <div class="overlay2"></div>
 

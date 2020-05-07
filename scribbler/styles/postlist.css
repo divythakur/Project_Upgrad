@@ -81,7 +81,8 @@ body{
 .material-icons{
     float: right;
     font-weight: bolder;
-    margin-top: 1px;
+    margin-top:-42px;
+        color:grey;
 }
 .material-icons:hover{
     cursor:pointer;
