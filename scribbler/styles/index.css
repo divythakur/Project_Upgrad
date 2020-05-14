@@ -116,7 +116,7 @@
     margin-bottom: 5px;
 }
 .modalinput{
-    width:340px;
+    width:323px;
     margin:15px;
     margin-bottom: 15px;
     background-color:lightgray;
@@ -125,7 +125,7 @@
 }
 .modalbutton{
     background-color: green;
-    width:370px;
+    width:355px;
     margin:8px;
     margin-right: 10px;
     margin-bottom: 15px;
@@ -180,6 +180,7 @@
     padding:10px;
     margin-top: 5px;
     margin-bottom: 5px;
+    padding-left: 0px;
 }
 .createpostinput{
     background-color: lightgrey;
@@ -193,7 +194,7 @@ body{
 
 }
 #bg-image{
-    height: 1368px;
+    height: 900px;
 }
 .overlay {
     position: absolute;

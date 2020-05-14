@@ -61,7 +61,7 @@ textarea:focus, input:focus{
     position: absolute;
     top: 204px;
     left: 38px;
-    height: 379px;
+    height: 286px;
     width: 120%;
     /* z-index: 10; */
     background-color: rgba(0, 0, 0, 0);
@@ -84,4 +84,7 @@ textarea:focus, input:focus{
     height: 79px;
     border-width: 18px;
     border-color: lightgrey;
+  }
+  .modalinput{
+      width:353px;
   }

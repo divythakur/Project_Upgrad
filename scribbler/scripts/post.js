@@ -60,7 +60,7 @@ document.getElementById("headingofpost").innerHTML=t;
     document.getElementById("para").style.border="none";
     document.getElementById("headingofpost").style.border="none";
 
-    document.getElementsByClassName("overlay2")[0].style.height="379px";
+    document.getElementsByClassName("overlay2")[0].style.height="286px";
     document.getElementsByClassName("overlay2")[0].style.width="120%";
      document.getElementById("savebutton").style.display="none";
      document.getElementById("editbutton").style.display="block";
@@ -85,7 +85,7 @@ function addcomment(element)
     var s=document.getElementById(element.id).value;
     console.log(s);
     var box= '<div id="allcomments">'+s+'</div>';
-    document.getElementById("entercomments").innerHTML+=box;
+    document.getElementById("entercomments").innerHTML=box+document.getElementById("entercomments").innerHTML;
     var g=document.getElementById("commenthere");
     g.value=g.defaultValue;
     
