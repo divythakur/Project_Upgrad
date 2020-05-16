@@ -10,7 +10,6 @@ body{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-right: 22px;
-
 }
 #firstline{
     margin:7.5px;
@@ -20,18 +19,12 @@ body{
     flex-wrap: wrap;
 }
 #editbutton{
-
     position:absolute;
     left:1166px;
     top:128px;
     color:white;
     height:30px;
     background-color: red;
-
-    
-    /*padding:5px;*/
-
-
 }
 
 textarea:focus, input:focus{
@@ -45,7 +38,6 @@ textarea:focus, input:focus{
     height:30px;
     background-color: red;
     display:none;
-    
 }
 #likebutton,#commentbutton{
     color:white;
@@ -54,8 +46,6 @@ textarea:focus, input:focus{
     font-weight: bolder;
     margin-top: 10px;
     margin-left: 0px;
-    
-
 }
 .overlay2 {
     position: absolute;
@@ -63,9 +53,8 @@ textarea:focus, input:focus{
     left: 38px;
     height: 286px;
     width: 120%;
-    /* z-index: 10; */
     background-color: rgba(0, 0, 0, 0);
-  }
+}
   #para{
       border:none;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -84,6 +73,8 @@ textarea:focus, input:focus{
     height: 79px;
     border-width: 18px;
     border-color: lightgrey;
+    overflow: auto;
+
   }
   .modalinput{
       width:353px;

@@ -1,22 +1,22 @@
 arr=[1,2,3,4,5];
-function ini()
+function oddpostinbetween()//this function is to place the odd no post in center of the screen
 {
     var count=arr.length;
     element=arr[count-1];
     if(count%2!=0)
     {
-        document.getElementById(element).style.margin="4% 4% 4% 28%";
+        document.getElementById(element).style.margin="4% 4% 4% 28%";//if thhey are odd no then change the left margin
         
     }
     if(count%2===0)
     {
-        document.getElementById(element).style.margin="4% 4% 4% 4%";
+        document.getElementById(element).style.margin="4% 4% 4% 4%";//if they are even no then sets its margin as 4%;  
     }
 }
-ini();
+oddpostinbetween();//function called to order the posts
 var tempid;
 
-function areyousure(id){
+function areyousure(id){//this function is for modal here overlay is the background sheet of modal
     document.getElementById("trashmodalcontainer").style.display="block";
     document.getElementsByClassName("overlay")[0].style.height="1000px";
     document.getElementsByClassName("overlay")[0].style.width="100%";
@@ -36,7 +36,7 @@ function onclickyes(){
     document.getElementsByClassName("overlay")[0].style.height="0px";
     document.getElementsByClassName("overlay")[0].style.width="0%";
     document.getElementsByClassName("overlay")[0].style.background="rgba(0,0,0,0)";
-    document.getElementById(tempid).style.display="none";
+    document.getElementById(tempid).style.display="none";//here tempid is getting from areyousure function 
     console.log("the item to be deleted is"+tempid);
         
       }())
@@ -44,23 +44,23 @@ function onclickyes(){
     {
         if(arr[i]===tempid)
         {
-            arr.splice(i,1);
+            arr.splice(i,1);//this is to remove that post id from athe array which is to be removed
         }
-
     }
-    console.log(arr);
-    ini();
+    oddpostinbetween();//again ordering the post after deletion 
 }
 var postheading;
 var nameofauthor;
-function changepagefromBtoC(element,authorname)
+function changepagefromBtoC(element,authorname,content)
 {
     
      postheading=document.getElementById(element.id).innerHTML;
      nameofauthor=document.getElementById(authorname.id).innerHTML;
+     fullpara=document.getElementById(content.id).innerHTML;
      localStorage.setItem("aname",nameofauthor);
      localStorage.setItem("glvar",postheading);
-     window.open("file:///home/divyanshu/upgrad/scribbler/html/post.html");
+     localStorage.setItem("content",fullpara)
+     window.open("file:///home/divyanshu/upgrad/scribbler/html/post.html");//open the new tab
 
 }
 console.log(postheading);
