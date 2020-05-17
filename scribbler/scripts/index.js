@@ -37,5 +37,5 @@ function createpostfunc()
 }
 function pagechange()
 {
-    window.open("file:///home/divyanshu/upgrad/scribbler/html/postslist.html");
+    window.open("./html/postslist.html");//open the new tab
 }

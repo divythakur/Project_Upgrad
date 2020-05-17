@@ -60,7 +60,7 @@ function changepagefromBtoC(element,authorname,content)
      localStorage.setItem("aname",nameofauthor);
      localStorage.setItem("glvar",postheading);
      localStorage.setItem("content",fullpara)
-     window.open("file:///home/divyanshu/upgrad/scribbler/html/post.html");//open the new tab
+     window.open("./post.html");//open the new tab
 
 }
 console.log(postheading);
