@@ -21,7 +21,7 @@ function areyousure(id){//this function is for modal here overlay is the backgro
     document.getElementsByClassName("overlay")[0].style.height="1000px";
     document.getElementsByClassName("overlay")[0].style.width="100%";
     document.getElementsByClassName("overlay")[0].style.background="rgba(0,0,0,0.6)";
-    tempid=id;    
+    tempid=id;//temp id is to store the id of the block which we want to delete
 }
 function onclickno(){
     document.getElementById("trashmodalcontainer").style.display="none";

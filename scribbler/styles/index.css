@@ -11,7 +11,7 @@
     padding: 0px 0px 0px 0px;
 }
 #bg-image{
-    background-image: url('/home/divyanshu/Downloads/Course+6+Project+Stub+-+Scribbler (1)/images/background.jpg');
+    background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
