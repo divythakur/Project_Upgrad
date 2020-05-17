@@ -1,37 +1,6 @@
 body{
     background-color: #ffeedd;
 }
-#scribbler{
-    font-family: 'Montez', cursive; 
-    margin:  0px 0px 0px 0px;
-    font-size:35px;
-    padding: 0px 0px 0px 0px;
-    color:blue;
-}
-#sub-heading{
-    font-family: 'Ubuntu Mono', monospace;;
-    margin:  0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-#sign-up{
-    margin-left: 890px;
-    padding:0px 0px 0px 0px;
-    width:105px;
-    color:white;
-    background-color: blue;
-    margin-top:10px;
-    height:30px;
-}
-#sign-in{
-    margin-right: 0px;
-    margin-left:20px;
-    padding:0px 0px 0px 0px;
-    width:105px;
-    color:white;
-    margin-top:10px;
-    background-color: blue;
-    height:30px;
-}
 .header-items{
     display:flex;
     flex-direction: row;

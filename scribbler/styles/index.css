@@ -16,10 +16,11 @@
     background-attachment: fixed;
     z-index: -1;
     background-size: 100% 100%;
+    height:1000px;
    
 }
 #sign-up{
-    margin-left: 890px;
+    margin-left: 922px;
     padding:0px 0px 0px 0px;
     width:105px;
     color:white;
@@ -189,9 +190,7 @@ html{
 body{
     height:100%;
 }
-#bg-image{
-    height: 900px;
-}
+
 /*overlay is the backgroud of modals its properties is changed in js file when modal is called*/
 .overlay {
     position: absolute;
